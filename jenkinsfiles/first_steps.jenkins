@@ -23,7 +23,7 @@ pipeline {
         }
         stage("Third step") {
             steps {
-                sh 'ssh root@prod.dev-ops.tk \'ps -lah\''
+                sh 'ssh root@prod.dev-ops.tk \'ps -aux\''
             }
         }
     }
